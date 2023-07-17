@@ -10,7 +10,9 @@
 # testing
 /coverage
 # dist folder
-/css/
+/css/style.css
+/css/style.css.map
+
 
 # next.js
 /.next/
