@@ -1,38 +1,41 @@
-## Project Overview: Ohmyfood Paris - A Mobile-First Website with Dynamic CSS Animations
+# Ohmyfood Paris - A Mobile-First Website with Dynamic CSS Animations
 
-Ohmyfood Paris represents a fusion of sleek mobile-first web design and dynamic CSS animations, crafting a gourmet online food ordering platform that is as visually enticing as it is interactive.
+Ohmyfood Paris is an exemplification of modern web development techniques, creating a gourmet online food ordering platform that is as visually enticing as it is interactive. The project showcases a mobile-first approach, with CSS animations and transitions, crafting an engaging user experience. 
 
-Built upon the robust foundation of CSS, our platform manifests an engaging user experience, mirroring the elegance of the gastronomic delights it features. CSS, renowned for its efficiency in detailing the look and formatting of HTML documents, ensures our website remains lightweight, ensuring swift loading and a seamless browsing experience across a range of devices.
+## Features
 
-Our design philosophy adopts a mobile-first strategy, catering to our target audience's fast-paced, tech-oriented lifestyle. We craft our smallest screen designs first and progressively enrich the experience for larger devices such as tablets and desktops. This approach ensures we deliver an optimal user experience across the spectrum of devices, offering consistency and intuitive interaction.
+The website includes:
 
-This mobile-first design is further enhanced by a fully responsive design architecture. Our designs fluidly adapt to different screen sizes, providing a unified and intuitive user experience. This fluidity is achieved through intelligent use of CSS media queries, enabling our design to adapt seamlessly across a variety of device widths.
+- A location-aware homepage with a brief company presentation and a section featuring the menus of four restaurants in interactive card format.
+- Four distinct pages, each showcasing a unique restaurant menu.
+- Consistent header and footer across all pages. The header features the site logo and a back-to-home button on the menu pages, and the footer includes an email link.
 
-The Ohmyfood platform is also characterized by its emphasis on interactivity and visual appeal, brought to life through CSS animations and transitions. Our static web content morphs into a dynamic user experience, with restaurant menu cards that expand on click, favorite menus marked with a heart-shaped 'like' button, and a sliding checkmark indicating selected items. All these animated elements are implemented using CSS, eliminating the need for JavaScript or other libraries.
+## Design and Interactivity
 
-In terms of compatibility, our website meets the W3C validation standards for HTML and CSS without any errors. It's designed to be fully compatible with the latest desktop versions of major browsers including Chrome, Firefox, and Safari, thus delivering a uniform browsing experience.
+The Ohmyfood platform showcases a blend of interactivity and visual appeal, created using CSS animations and transitions. Restaurant menu cards expand on click, favorite menus are marked with a heart-shaped 'like' button, and a sliding checkmark indicates selected dishes. All these interactive elements are implemented using pure CSS, without the need for JavaScript or any libraries.
 
-In conclusion, the Ohmyfood Paris project is a beacon of contemporary web development, showcasing how a mobile-first website can be enhanced with dynamic CSS animations. The outcome is a high-performance, interactive, and user-friendly platform that redefines the online food ordering experience.
+The design is underlined by a mobile-first philosophy, providing an optimal user experience across various devices. The designs fluidly adapt to different screen sizes, ensuring a consistent and intuitive user experience. This fluidity is achieved through intelligent use of CSS media queries, enabling our design to adapt seamlessly across a variety of device widths.
 
----
+## Compatibility and Validation
 
-## Project Challenges and Deliverables
+The website is fully compatible with the latest desktop versions of major browsers, including Chrome, Firefox, and Safari, providing a uniform browsing experience. Furthermore, it meets the W3C validation standards for HTML and CSS without any errors, ensuring adherence to web standards.
 
-The project poses a set of technical challenges:
+## Installation and Usage
 
-- Implementing a mobile-first approach in design.
-- Ensuring responsiveness across mobile, tablet, and desktop.
-- Meeting W3C validation standards for HTML and CSS without errors.
-- Guaranteeing compatibility with the latest desktop versions of Chrome, Firefox, and Safari.
+1. Clone the repository to your local machine.
+2. Navigate into the project directory.
+3. Run `npm install` to install the necessary dependencies.
+4. Use the command `npm run dev` to start the development server and automatically compile Sass files. The server will automatically reload when files are changed.
 
-Our deliverables include:
+## Tech Stack
 
-- A homepage displaying the location of restaurants, a short company presentation, and a section containing the menus of four restaurants in the form of interactive cards.
-- Four dedicated pages, each featuring a restaurant menu.
-- A consistent header and footer across all pages, with the header featuring the site logo and a return-to-home button on menu pages, and the footer containing an email link on the 'Contact' click.
-- Graphic effects and animations achieved using CSS, enhancing button interactivity, homepage loading, and gradual dish appearance on menu pages.
-- A heart-shaped 'Like' button on the model that fills up gradually when clicked or hovered over, allowing users to save their favorite menus.
+The project leverages:
 
-In essence, the Ohmyfood Paris project represents a symphony of modern CSS-based web development techniques, resulting in a vibrant, interactive, and user-friendly online food ordering platform.
+- HTML5 for structuring content in a meaningful way.
+- CSS3 for implementing designs, animations, and transitions.
+- Sass for efficient and scalable stylesheets.
+- Node.js and npm for managing project dependencies.
 
----
+## Project Scope
+
+The goal of Ohmyfood Paris is to redefine the online food ordering experience by offering a high-performance, interactive, and user-friendly platform. The project serves as a showcase of front-end development skills, including semantic HTML5 markup, CSS3 features, and efficient use of Sass for scalable stylesheets. The website is expected to evolve further by enabling online booking and menu composition features and extending the services to other cities beyond Paris.
