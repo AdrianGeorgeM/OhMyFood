@@ -6,185 +6,193 @@
 @import 'menupages';
 @import 'animation';
 
-body{
-  font-family: "Roboto";
-  margin:0px;
-  max-width: 800px;
-  margin:auto;
+body {
+	font-family: 'Roboto';
+	margin: 0;
+	max-width: 800px;
 }
 
-p{
-  font-size: 17px;
+p {
+	font-size: 17px;
 }
 
-a{
-  text-decoration:none;
+a {
+	text-decoration: none;
 }
 
 .adress {
-  justify-content: center;
-  text-align:center;
-  background-color: rgb(243, 243, 243);
-  box-shadow: inset 0 5px 6px -4px lightgrey;
-  padding:16px;
-  
-  &__icon {
-    margin-right: 1rem;
-  }
-  
-  &__text {
-    font-weight: 700;
-  }
+	justify-content: center;
+	text-align: center;
+	background-color: $background-color;
+	box-shadow: inset 0 5px 6px -4px lightgrey;
+	padding: 16px;
+
+	&__icon {
+		margin-right: 1rem;
+	}
+
+	&__text {
+		font-weight: 700;
+	}
 }
 
-.hero{
-  display:flex;  
-  flex-direction:column;
-  text-align: center; 
-  background-color:#f9f9f9;
-  padding:20px;
-  
-  &__title {
-    margin:0px;
-    margin-top:20px;
-  }
-  
-  &__subtitle {
-    font-weight:100;
-    margin:auto;
-    margin-top:40px;
-    text-align: center;
-    max-width:300px;
-    width:100%;
-    font-size: 17px;
-  }
-  & a {
-    color:white;
-    padding:15px 30px;
-    text-decoration: none;
-  }
+.hero {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: $background-color;
+	padding: 20px;
+
+	&__title {
+		margin: 0;
+		margin-top: 20px;
+	}
+
+	&__subtitle {
+		font-weight: 100;
+		margin: auto;
+		margin-top: 40px;
+		text-align: center;
+		max-width: 300px;
+		width: 100%;
+		font-size: 17px;
+	}
+
+	a {
+		color: white;
+		padding: 15px 30px;
+	}
 }
 
-.instructions{
-  &__title{
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-  &__chose{
-    display: flex;
-    margin: auto;
-    margin-top: 30px;
-    max-width: 450px;
-    width:100%;
-    padding: 12px;
-    border-radius: 24px;
-    background: #f9f9f9;
-    box-shadow: 0px 3px 10px lightgrey;
-    color:black;
-    &:hover{
-      background-color: #f6edff;
-    }    
-  }
-  &__chose:hover .instructions__fas{
-    color:$primary-color;
-  }
+.instructions {
+	&__title {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
 
-  &__number{
-    color: white;
-    background: $primary-color;
-    border-radius: 60px;
-    padding: 0.25em 0.50em;
-    height: 18px;
-    margin-top: 15px;
-    margin-left: -25px;
-  }
-  &__text{
-    margin-left: 30px;
-  }
-  &__icon{
-    display: flex;
-    margin: auto;
-    margin-left: 20px;
-    font-size: 17px;
-    font-weight: 500;
-  }
-  &__fas{
-    color:grey;
-  }
+	&__chose {
+		display: flex;
+		margin: auto;
+		margin-top: 30px;
+		max-width: 450px;
+		width: 100%;
+		padding: 12px;
+		border-radius: 24px;
+		background: $background-color;
+		box-shadow: 0px 3px 10px lightgrey;
+		color: black;
+
+		&:hover {
+			background-color: $tertiary-color;
+		}
+
+		& .instructions__fas {
+			color: $primary-color;
+		}
+	}
+
+	&__number {
+		color: white;
+		background: $primary-color;
+		border-radius: 60px;
+		padding: 0.25em 0.5em;
+		height: 25px;
+		margin-top: 15px;
+		margin-left: -25px;
+	}
+
+	&__text {
+		margin-left: 30px;
+	}
+
+	&__icon {
+		display: flex;
+		margin: auto;
+		margin-left: 20px;
+		font-size: 17px;
+		font-weight: 500;
+	}
+
+	&__fas {
+		color: grey;
+	}
 }
 
-@media (max-width: 500px){
-  .instructions__number{
-    margin-left:-10px;
-  }
+@media (max-width: 500px) {
+	.instructions__number {
+		margin-left: -10px;
+	}
 }
 
 .restaurants {
-  margin-top: 80px;
-  
-  &__box{
-    background: #f9f9f9;
-    padding-bottom: 100px;
-    padding-top:50px;
-  }
-  &__title{
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-  &__card{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    column-gap:20px;
-    row-gap: 20px;
-  
-    & img {
-      max-width: 530px;
-      width:100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 15px 15px 0 0;
-    }
-  }
-  &__new{
-    position:relative;
-  }
-  &__badge{
-    background-color: $tertiary-color;
-    color: darken($tertiary-color, 50%);
-    width: 65px;
-    text-align: center;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 4px;
-    position:absolute;
-    top:0;
-    right:0;
-    margin-right:20px;
-  }
+	margin-top: 80px;
+
+	&__box {
+		background: $background-color;
+		padding-bottom: 100px;
+		padding-top: 50px;
+	}
+
+	&__title {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	&__card {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: 20px;
+		row-gap: 20px;
+
+		img {
+			max-width: 530px;
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+			border-radius: 15px 15px 0 0;
+		}
+	}
+
+	&__new {
+		position: relative;
+	}
+
+	&__badge {
+		background-color: $tertiary-color;
+		color: darken($tertiary-color, 50%);
+		width: 65px;
+		text-align: center;
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-radius: 4px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-right: 20px;
+	}
 }
 
 .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 3px 4px lightgrey;
-  border-radius: 0 0 15px 15px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 3px 4px lightgrey;
+	border-radius: 0 0 15px 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 
-  &__title{
-    line-height: 4px;
-    margin-left: 10px;
-  } 
-  &__name{
-    font-weight: 600;
-    color: black;
-  }
-  &__city{
-    font-weight: 100;
-    color: black;
-  }
-} 
+	&__title {
+		line-height: 4px;
+		margin-left: 10px;
+	}
 
+	&__name {
+		font-weight: 600;
+	}
+
+	&__city {
+		font-weight: 100;
+	}
+}
